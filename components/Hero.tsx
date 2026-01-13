@@ -1,3 +1,4 @@
+import React from 'react';
 import cchLogo from '../assets/cch-logo.jpg';
 
 export const Hero: React.FC = () => {
