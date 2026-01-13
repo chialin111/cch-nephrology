@@ -1,20 +1,49 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 彰基腎臟科資源入口網 (CCH Nephrology Portal)
 
-# Run and deploy your AI Studio app
+本專案為彰化基督教醫院腎臟科資源入口網的前端應用程式，使用 React + Vite 構建。
 
-This contains everything you need to run your app locally.
+## 📁 專案結構說明
 
-View your app in AI Studio: https://ai.studio/apps/drive/1lmFaSCVpysHBPnEIiAW6uHYtTGPKsCdY
+- `src/` - 原始碼目錄
+  - `components/` - React 組件
+  - `App.tsx` - 主應用入口
+- `.github/workflows/` - GitHub Actions 自動化部署設定
+- `vite.config.ts` - Vite 配置檔 (已設定 GitHub Pages base path)
 
-## Run Locally
+## 🚀 快速開始
 
-**Prerequisites:**  Node.js
+### 前置需求
+請確保您的電腦已安裝 [Node.js](https://nodejs.org/) (建議 v18 或以上)。
 
+### 安裝套件
+在專案根目錄執行：
+```bash
+npm install
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 啟動開發伺服器
+```bash
+npm run dev
+```
+啟動後，請瀏覽終端機顯示的網址 (通常為 http://localhost:3000)。
+
+### 建置生產版本
+```bash
+npm run build
+```
+建置完成的檔案將位於 `dist/` 目錄。
+
+## 📦 部署 (GitHub Pages)
+
+本專案已設定 GitHub Actions workflow 自動部署至 GitHub Pages。
+
+**設定步驟：**
+1. 將程式碼推送到 GitHub repository 的 `main` 分支。
+2. 進入 GitHub repository 的 **Settings** > **Pages**。
+3. 在 **Build and deployment** > **Source** 選擇 **GitHub Actions**。
+4. 之後每次推送到 `main` 分支，都會自動觸發部署流程。
+
+## 📝 其他說明
+- **.gitignore**: 已設定忽略 `node_modules`, `.env`, `dist` 等檔案。
+- **環境變數**: 如需設定 API Key，請建立 `.env` 檔案 (參考 `.env.example` 或直接設定)。
+- **TailwindCSS**: 未使用，目前使用 Vanilla CSS / 內建樣式。

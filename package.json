@@ -1,5 +1,5 @@
 {
-  "name": "彰基腎臟科資源入口網",
+  "name": "cch-nephrology-portal",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +14,8 @@
     "lucide-react": "^0.562.0"
   },
   "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
