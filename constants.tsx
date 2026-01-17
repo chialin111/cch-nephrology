@@ -53,6 +53,14 @@ export const PORTAL_DATA: Section[] = [
             description: '腹膜炎的早期症狀辨識、預防與居家緊急處理',
             isExternal: true,
             tag: '重要'
+          },
+          {
+            id: 'pd-tech-quiz',
+            title: '換液技術知識測驗',
+            url: 'https://chialin111.github.io/pd-tech/',
+            description: '測試您對腹膜透析換液技術的了解程度',
+            isExternal: true,
+            tag: '測驗'
           }
         ]
       },
